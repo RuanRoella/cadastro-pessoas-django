@@ -1,0 +1,9 @@
+<title>Remover</title>
+{% extends 'main/base.html' %}
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    <p>Deseja deletar "{{ object }}"?</p>
+    <input type="Submit" value="Confirmar">
+</form>
+{% endblock content %}

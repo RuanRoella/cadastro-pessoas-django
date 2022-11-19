@@ -1,0 +1,7 @@
+{% if user.is_authenticated %}
+<ul style="list-style: none; display: flex;">
+    <li style="margin: auto 10px;"><a href="{% url 'home' %}">Home</a></li>
+    <li><a style="margin: auto 10px;" href="{% url 'pessoa.index' %}">Pessoa</a></li>
+    <li><a style="margin: auto 10px;" href="{% url 'logout' %}">Logout</a></li>
+</ul>
+{% endif %}
